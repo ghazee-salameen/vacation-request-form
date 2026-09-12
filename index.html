@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -65,24 +64,9 @@
       <label>التخصص</label>
       <input type="text" name="specialty" required>
 
-      <!-- ✅ الحقل الجديد: الصفوف الدراسية -->
+      <!-- ✅ الحقل المعدل: مربع نص لادخال الصفوف يدوياً -->
       <label>الصفوف التي يدرسها</label>
-      <select name="taught_grades" required>
-        <option value="" disabled selected>-- اختر الصف --</option>
-        <option value="الصف الأول الأساسي">الصف الأول الأساسي</option>
-        <option value="الصف الثاني الأساسي">الصف الثاني الأساسي</option>
-        <option value="الصف الثالث الأساسي">الصف الثالث الأساسي</option>
-        <option value="الصف الرابع الأساسي">الصف الرابع الأساسي</option>
-        <option value="الصف الخامس الأساسي">الصف الخامس الأساسي</option>
-        <option value="الصف السادس الأساسي">الصف السادس الأساسي</option>
-        <option value="الصف السابع الأساسي">الصف السابع الأساسي</option>
-        <option value="الصف الثامن الأساسي">الصف الثامن الأساسي</option>
-        <option value="الصف التاسع الأساسي">الصف التاسع الأساسي</option>
-        <option value="الصف العاشر الثانوي">الصف العاشر الثانوي</option>
-        <option value="الصف الحادي عشر الثانوي">الصف الحادي عشر الثانوي</option>
-        <option value="الصف الثاني عشر الثانوي">الصف الثاني عشر الثانوي</option>
-        <option value="صفوف متعددة">صفوف متعددة (أذكر في الملاحظات)</option>
-      </select>
+      <input type="text" name="taught_grades" required placeholder="مثال: الصف الخامس والسادس">
 
       <label>المادة الدراسية</label>
       <input type="text" name="subject" required>
@@ -226,6 +210,7 @@
         { code: "1187", name: "مجدي سعدي عبدالرحمن اطميزة" }, { code: "1188", name: "ناهد سميح بدوي عمرو" },
         { code: "1189", name: "وجدان محمد مسلم اطميزة" }, { code: "1190", name: "عصام احمد ابراهيم الشعراوي" }
 
+    // أضف المزيد هنا
   ];
 
   // =====================================================
@@ -236,8 +221,8 @@
   ];
 
   // ✅ ضع رابط Apps Script هنا
-  //const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbykWxR49JH28iXy7vbgyWr9kEL2PAgVvBO4p2goJtq4E08a4t9agfotdsSuL10h739CCA/exec";
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3jNBpMnYD-2AlO5uZuON4uExINjpaEx6-bJnXjtdcrHGe9UHXE-DldnE6av1xvmKxbg/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3jNBpMnYD-2AlO5uZuON4uExINjpaEx6-bJnXjtdcrHGe9UHXE-DldnE6av1xvmKxbg/exec";
+
   const schoolInput = document.getElementById('school_input');
   const suggestionsBox = document.getElementById('school_suggestions');
   const messageBox = document.getElementById('message');
